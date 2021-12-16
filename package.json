@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.45.0"
+  },
+  "name": "Tank-App",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asanov-Oleg/Tank-App.git"
+  },
+  "author": "Asanov-Oleg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asanov-Oleg/Tank-App/issues"
+  },
+  "homepage": "https://github.com/Asanov-Oleg/Tank-App#readme",
+  "description": ""
+}

@@ -1,0 +1,718 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Миксины */
+.header__body {
+  height: 90px;
+  display: flex;
+  font-size: 0;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  max-width: 1260px;
+}
+
+.header_logo {
+  display: inline-block;
+  width: 200px;
+}
+
+.header_logo img {
+  max-width: 100%;
+}
+
+.menu-header_list {
+  display: flex;
+}
+
+.menu-header_list li:nth-child(4) {
+  margin: 0px 0px 0px 44px;
+}
+
+.menu-header_list li:nth-child(3) {
+  margin: 0px 0px 0px 68px;
+}
+
+.menu-header_list li:nth-child(2) {
+  margin: 0px 0px 0px 33px;
+}
+
+.menu-header_link {
+  opacity: 0.84;
+  color: #2d394c;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  line-height: 28px;
+}
+
+.menu-header_link:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #6eaedb;
+  bottom: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.menu-header_link:hover {
+  color: #6eaedb;
+}
+
+.menu-header_link:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.footer {
+  height: 139px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.footer .container {
+  width: 1260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .container .footer__menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.footer .container .footer__menu .menu-footer_list {
+  display: flex;
+  flex-direction: row;
+  opacity: 0.9;
+  color: #4d5664;
+  font-family: Ubuntu, sans-serif;
+  color: #c2c5c9;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28.97px;
+  text-transform: uppercase;
+}
+.footer .container .footer__menu .menu-footer_list .list-item:not(:last-child) {
+  margin-right: 38px;
+}
+.footer .container .footer__menu .menu-footer_list .list-item_nm {
+  margin-right: 0;
+}
+.footer .container .footer__menu .menu-footer_list .menu-footer_link {
+  opacity: 0.84;
+  color: #2d394c;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  line-height: 28px;
+}
+.footer .container .footer__menu .menu-footer_list .menu-footer_link:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #6eaedb;
+  bottom: 0;
+  transition: all 0.3s ease 0s;
+}
+.footer .container .footer__menu .menu-footer_list .hov:hover {
+  color: #6eaedb;
+}
+.footer .container .footer__menu .menu-footer_list .hov:hover:after {
+  left: 0;
+  width: 100%;
+}
+.footer .container .footer__menu .menu-footer_list #twitter {
+  vertical-align: middle;
+  margin-right: 28px;
+}
+.footer .container .footer__menu .menu-footer_list #twitter:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer .container .footer__menu .menu-footer_list #google {
+  vertical-align: middle;
+}
+.footer .container .footer__menu .menu-footer_list #google:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer .container .footer__menu .menu-footer_list #facebook {
+  vertical-align: middle;
+  margin-right: 37px;
+}
+.footer .container .footer__menu .menu-footer_list #facebook:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer .container .footer__menu .menu-footer_list .social {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.footer .container .menu_separator {
+  display: block;
+  width: 1px;
+  height: auto;
+  margin-left: 17px;
+  margin-right: 21px;
+  background-color: #dddddd;
+}
+
+.imageblock {
+  position: relative;
+  height: 843px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.imageblock__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.imageblock__title h2 {
+  position: absolute;
+  top: 239px;
+  left: 164px;
+  width: 485px;
+  color: #f7f6f2;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 72px;
+  text-transform: uppercase;
+  z-index: 4;
+}
+.imageblock__title p {
+  position: absolute;
+  top: 391px;
+  left: 164px;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 47px;
+  z-index: 4;
+}
+.imageblock__form {
+  position: absolute;
+  top: 482px;
+  left: 165px;
+  color: #f7f7f7;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: 500;
+  z-index: 6;
+  /* Firefox 19+  */
+  /* Firefox 18- */
+}
+.imageblock__form p:after {
+  content: "FREE";
+  width: 57px;
+  height: 27px;
+  background-color: #ffce54;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 5px;
+}
+.imageblock__form #e-mail_adress {
+  height: 54px;
+  width: 423px;
+  padding-left: 28px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.imageblock__form ::-webkit-input-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.imageblock__form ::-moz-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.imageblock__form :-moz-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.imageblock__form :-ms-input-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.imageblock #submit {
+  width: 113px;
+  height: 54px;
+  background-color: #77c344;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 37px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.imageblock__image {
+  position: absolute;
+  top: 92px;
+  left: 869px;
+  z-index: 3;
+}
+.imageblock__decorative_clouds img:first-child {
+  position: absolute;
+  bottom: 88px;
+  left: 120px;
+  z-index: 4;
+}
+.imageblock__decorative_clouds img:nth-child(2) {
+  position: absolute;
+  top: 147px;
+  left: 153px;
+  z-index: 4;
+}
+.imageblock__decorative_clouds img:nth-child(3) {
+  position: absolute;
+  top: 230px;
+  right: 214px;
+  z-index: 4;
+}
+.imageblock__decorative_clouds img:last-child {
+  position: absolute;
+  bottom: 113px;
+  right: 80px;
+  z-index: 4;
+}
+
+.clients {
+  max-width: 100%;
+  height: 158px;
+  margin: auto;
+}
+.clients__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1500px;
+  height: 158px;
+  background-color: #f8f8f8;
+  margin: auto;
+}
+
+.advantages {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.container .advantages_block_title h1 {
+  opacity: 0.85;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 119px;
+  padding-bottom: 137px;
+}
+.container .text {
+  width: 500px;
+  margin-left: 148px;
+}
+.container .text h2 {
+  opacity: 0.9;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+.container .text p {
+  color: #9499a2;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.container .text .block1 {
+  height: auto;
+}
+.container .text .block1 h2:before {
+  content: "";
+  background-image: url(../img/icons/icon.png);
+  display: inline-block;
+  background-size: cover;
+  height: 31px;
+  width: 49px;
+  opacity: 1;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.container .text .block2 {
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .text .block2 h2::before {
+  content: "";
+  background-image: url(../img/icons/stopwatch_.png);
+  display: inline-block;
+  background-size: cover;
+  height: 46px;
+  width: 53px;
+  opacity: 1;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.container .text .block3 {
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container .text .block3 h2::before {
+  content: "";
+  background-image: url(../img/icons/tweet.png);
+  display: inline-block;
+  background-size: cover;
+  height: 46px;
+  width: 53px;
+  opacity: 1;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.container .text .block4 {
+  height: auto;
+  width: 100%;
+}
+.container .text .block4 p {
+  margin-bottom: 158px;
+}
+.container .text .block4 h2::before {
+  content: "";
+  background-image: url(../img/icons/Ico.png);
+  display: inline-block;
+  background-size: cover;
+  height: 46px;
+  width: 53px;
+  opacity: 1;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.container .img_block {
+  position: absolute;
+  top: 270px;
+  right: -270px;
+  width: 1026px;
+  height: 625px;
+  margin-bottom: 123px;
+}
+
+.differents_block {
+  width: 100%;
+  margin: auto;
+  background-color: #f1f1f2;
+}
+.differents_block .differents_block_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1500px;
+}
+.differents_block .differents_block_container .text {
+  margin-left: 148px;
+  width: 725px;
+}
+.differents_block .differents_block_container .text h2 {
+  opacity: 0.88;
+  color: #2d394c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 133px;
+}
+.differents_block .differents_block_container .text h2:before {
+  content: "";
+  background-image: url(../img/icons/Cloud1.png);
+  display: inline-block;
+  height: 42px;
+  width: 63px;
+  vertical-align: middle;
+  margin-right: 29px;
+}
+.differents_block .differents_block_container .text p {
+  opacity: 0.89;
+  color: #5a626e;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.differents_block .differents_block_container .picture {
+  max-width: 600px;
+  max-height: 300px;
+  height: auto;
+  overflow: hidden;
+}
+.differents_block .differents_block_container .picture img {
+  margin-top: -250px;
+  margin-left: -510px;
+}
+.differents_block .differents_block_container .buttons {
+  width: 100%;
+  margin: 0 auto;
+}
+.differents_block .differents_block_container .buttons .container {
+  display: flex;
+  justify-content: space-around;
+  width: 130px;
+  height: 24px;
+  margin-bottom: 123px;
+}
+.differents_block .differents_block_container .buttons .container .circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  opacity: 0.27;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.differents_block .differents_block_container .buttons .container .circle:hover {
+  opacity: 1;
+  border: 2px solid #64a4d7;
+  background-color: #64a4d7;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.services {
+  max-width: 1500px;
+  margin: auto;
+  background-color: #ffffff;
+}
+.services__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.services__container .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.services__container .text h2 {
+  color: #5a626e;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-top: 147px;
+}
+.services__container .text p {
+  color: #5a626e;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-top: 48px;
+  margin-bottom: 63px;
+  opacity: 0.75;
+}
+.services__container .form_2 {
+  color: #f7f7f7;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: 500;
+  z-index: 6;
+  position: relative;
+  /* Firefox 19+  */
+  /* Firefox 18- */
+}
+.services__container .form_2 .placeholder_icon {
+  position: absolute;
+  top: 15px;
+  bottom: 22px;
+  left: 24px;
+}
+.services__container .form_2 #e-mail_adress_2 {
+  height: 54px;
+  width: 423px;
+  padding-left: 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background-color: #ffffff;
+  margin-bottom: 104px;
+}
+.services__container .form_2 ::-webkit-input-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.services__container .form_2 ::-moz-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.services__container .form_2 :-moz-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.services__container .form_2 :-ms-input-placeholder {
+  opacity: 0.31;
+  color: #2d394c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 133px;
+}
+.services__container #submit_2 {
+  width: 113px;
+  height: 54px;
+  background-color: #77c344;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 36px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
