@@ -24,7 +24,6 @@ nav, footer, header, aside {
 html, body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
@@ -96,15 +95,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu-header_list li:nth-child(4) {
-  margin: 0px 0px 0px 44px;
+  margin: 0 0 0 44px;
 }
 
 .menu-header_list li:nth-child(3) {
-  margin: 0px 0px 0px 68px;
+  margin: 0 0 0 68px;
 }
 
 .menu-header_list li:nth-child(2) {
-  margin: 0px 0px 0px 33px;
+  margin: 0 0 0 33px;
 }
 
 .menu-header_link {
@@ -165,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   opacity: 0.9;
-  color: #4d5664;
   font-family: Ubuntu, sans-serif;
   color: #c2c5c9;
   font-size: 14px;
@@ -306,7 +304,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   margin-left: 5px;
 }
-.imageblock__form #e-mail_adress {
+
+.imageblock__form #e-mail_address {
   height: 54px;
   width: 423px;
   padding-left: 28px;
@@ -521,24 +520,23 @@ h1, h2, h3, h4, h5, h6 {
   height: 625px;
   margin-bottom: 123px;
 }
-
-.differents_block {
+.differences_block {
   width: 100%;
   margin: auto;
   background-color: #f1f1f2;
 }
-.differents_block .differents_block_container {
+.differences_block .differences_block_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1500px;
 }
-.differents_block .differents_block_container .text {
+.differences_block .differences_block_container .text {
   margin-left: 148px;
   width: 725px;
 }
-.differents_block .differents_block_container .text h2 {
+.differences_block .differences_block_container .text h2 {
   opacity: 0.88;
   color: #2d394c;
   font-family: "Open Sans", sans-serif;
@@ -546,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 133px;
 }
-.differents_block .differents_block_container .text h2:before {
+.differences_block .differences_block_container .text h2:before {
   content: "";
   background-image: url(../img/icons/Cloud1.png);
   display: inline-block;
@@ -555,36 +553,36 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   margin-right: 29px;
 }
-.differents_block .differents_block_container .text p {
+.differences_block .differences_block_container .text p {
   opacity: 0.89;
   color: #5a626e;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
 }
-.differents_block .differents_block_container .picture {
+.differences_block .differences_block_container .picture {
   max-width: 600px;
   max-height: 300px;
   height: auto;
   overflow: hidden;
 }
-.differents_block .differents_block_container .picture img {
+.differences_block .differences_block_container .picture img {
   margin-top: -250px;
   margin-left: -510px;
 }
-.differents_block .differents_block_container .buttons {
+.differences_block .differences_block_container .buttons {
   width: 100%;
   margin: 0 auto;
 }
-.differents_block .differents_block_container .buttons .container {
+.differences_block .differences_block_container .buttons .container {
   display: flex;
   justify-content: space-around;
   width: 130px;
   height: 24px;
   margin-bottom: 123px;
 }
-.differents_block .differents_block_container .buttons .container .circle {
+.differences_block .differences_block_container .buttons .container .circle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -597,7 +595,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
 }
-.differents_block .differents_block_container .buttons .container .circle:hover {
+.differences_block .differences_block_container .buttons .container .circle:hover {
   opacity: 1;
   border: 2px solid #64a4d7;
   background-color: #64a4d7;
@@ -661,11 +659,10 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 22px;
   left: 24px;
 }
-.services__container .form_2 #e-mail_adress_2 {
+.services__container .form_2 #e-mail_address_2 {
   height: 54px;
   width: 423px;
   padding-left: 80px;
-  background-color: #fff;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.18);
   background-color: #ffffff;
